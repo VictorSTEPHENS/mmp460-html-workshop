@@ -1,0 +1,83 @@
+/*Complete this CSS file (it is already linked to the HTML page).
+Try to create an appealing design, keeping these principles and tips in mind:
+	1.Create a clear visual hierarchy (including styling your menu to clearly indicate what page is active).
+	2.Make sure the content doesn't feel cramped or too long (use margin, padding, width)
+	3.Try adding appeal to your design with good typographic choices (try using Google fonts)
+	4.Use em (rather than px) whenever possible
+	5.Adjust your design based on the screen size (try to create a responsive menu by using @media-queries)
+You may add some Javascript, but you don't have to.
+*/
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #36D94B
+}
+
+h1, h2, p, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3em;
+  color: #C217D8;
+}
+h2 {
+  text-align: center;
+  color: #000000;
+}
+#wrapper {
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 1em;
+}
+li {
+  display: inline;
+  padding: 0 1.5em;
+}
+li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: #FFFFFF;
+  transition: 0.3s;
+  padding: 1em 1em;
+  margin-right: -3em;
+}
+ul {
+  background-color: #C73322;
+  list-style-type: none;
+  margin: 0;
+  padding: 1em;
+  text-align: left;
+  border: 0.0725em solid white;
+  box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.2);
+}
+li a.active {
+  background-color: #32F60B;
+  padding-bottom: 1.1em;
+  color: white;
+}
+li a:hover:not(.active) {
+  background-color: #32F60B;
+  padding-bottom: 1.1em;
+  color: white;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  ul {
+    padding: 0.70em;
+    text-align: center;
+  }
+  li a {
+    display: block;
+  }
+  li a.active {
+    padding-bottom: 2em;
+    margin: 0;
+  }
+  li a:hover:not(.active) {
+    padding-bottom: 2em;
+    margin: 0;
+  }
+}
